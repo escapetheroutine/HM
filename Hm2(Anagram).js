@@ -8,8 +8,8 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 function anagrams (word1, word2) {
-    let normalWord1 = word1.split("").sort().join("").toLowerCase().replace(/[^\w ]/g, "");
-    let normalWord2 = word2.split("").sort().join("").toLowerCase().replace(/[^\w ]/g, "");
+    let normalWord1 = word1.split("").sort().join("").toLowerCase().replace(/[^\w]/g, "");
+    let normalWord2 = word2.split("").sort().join("").toLowerCase().replace(/[^\w]/g, "");
 
     if (normalWord1 === normalWord2) {
         return true;
